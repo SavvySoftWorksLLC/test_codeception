@@ -31,3 +31,17 @@ var writeToDiv = new Vue({
     msg: 'Hello Vue you beautiful thing you!'
   }
 })
+
+var testCounter = new Vue({
+  el: '#test3',
+  data: {
+    counter: 0
+  }
+})
+
+var writeToDiv2 = new Vue({
+  el: '#writeToDiv2',
+  data: {
+    msg: 'OMFGulp!'
+  }
+})
