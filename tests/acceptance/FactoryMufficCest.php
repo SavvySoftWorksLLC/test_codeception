@@ -21,7 +21,7 @@ class FactoryMufficCest
     public function _after(AcceptanceTester $I)
     {
         // static::$fm->deleteSaved();
-        \League\FactoryMuffin\Facade::deleteSaved();
+        \League\FactoryMuffin\Faker\Facade::deleteSaved();
     }
 
     // tests
