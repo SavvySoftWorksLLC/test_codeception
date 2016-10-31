@@ -83,38 +83,27 @@
         </div>
 
         <div class="bordered">
-            <h3 class="flex-center">Body Snatchers / Codeception Test</h3>
+            <h3 class="flex-center">Muffin Factory / Codeception Test</h3>
+            <h3 class="flex-center">Make nothing then test nothing</h3>
             <div class="flex-center">
-                <input class="eventDateHelper" name="test_date" value="01/01/2018 2:46 PM" data-endpoint='/saveThings/index.json' data-dateformat="MM/DD/YYYY" data-timeformat="h:mm a"/>
+                <input class="" name="test_nothing" data-endpoint='/nothing/{{json_encode($nothing)}}'/>
+            </div>
+            
+            <div id="nothingness" class="bordered">
+<!-- 
+                @if(!empty($nothings))
+                    <ul>
+                        @foreach($nothings as $nothing) -->
+                            {{$nothing}}
+                       <!--  @endforeach
+                    </ul>
+                @else
+                    <p>No nothings yet, add nothings asap.</p>
+                @endif -->
             </div>
         </div>
 
-        <div class="bordered">
-            <h3 class="flex-center">Vue.js Component</h3>
-            <h4 class="flex-center">Write Something Below This Headline</h4>
-            <div id="writeToDiv" class="flex-center bordered">
-                <h1>@{{ msg }}</h1>
-            </div>
-        </div>
 
-        <div id="app"></div>
 
-        <div class="flex-center position-ref full-height">
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
     </body>
 </html>

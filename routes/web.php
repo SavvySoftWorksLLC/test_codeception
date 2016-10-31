@@ -20,3 +20,5 @@ Route::resource('jstest', 'JSTestController', ['only' => ['index']]);
 Route::post('jstest/{jstest}', 'JSTestController@update');
 
 Route::resource('test3', 'Counter', ['only' => ['index']]);
+
+Route::resource('nothing', 'NothingController', ['only' => ['index']]);
