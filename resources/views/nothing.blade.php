@@ -90,16 +90,15 @@
             </div>
             
             <div id="nothingness" class="bordered">
-<!-- 
-                @if(!empty($nothings))
-                    <ul>
-                        @foreach($nothings as $nothing) -->
-                            {{$nothing}}
-                       <!--  @endforeach
-                    </ul>
-                @else
-                    <p>No nothings yet, add nothings asap.</p>
-                @endif -->
+                <p>Hey look at me!</p>
+
+                <p>
+                    {{var_dump($nothing)}}
+                </p>
+                <p>
+                    {{$nothing}}
+                </p>
+
             </div>
         </div>
 

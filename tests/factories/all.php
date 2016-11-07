@@ -1,7 +1,11 @@
 <?php
 
-use League\FactoryMuffin\Facade as FactoryMuffin;
+use League\FactoryMuffin\Faker\Facade as Faker;
  
-FactoryMuffin::define('Nothing', array(
+// FactoryMuffin::define('Nothing', array(
+//   'nothing' => 'buttNothingSomething'
+// ));
+
+$fm->define('App\Nothing')->setDefinitions([
   'nothing' => 'buttNothingSomething'
-));
+]);

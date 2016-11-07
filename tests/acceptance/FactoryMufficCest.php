@@ -1,6 +1,7 @@
 <?php
 
-use League\FactoryMuffin\Faker\Facade as Faker;
+use League\FactoryMuffin\FactoryMuffin;
+use League\FactoryMuffinFaker\Faker;
 
 class FactoryMufficCest
 {
@@ -15,20 +16,21 @@ class FactoryMufficCest
         // new FactoryMuffin(new ModelStore('save', 'delete'));
 
         // load your model definitions
-        static::$fm->loadFactories(__DIR__.'/factories/app.php'); 
+        static::$fm->loadFactories(__DIR__.'/../factories'); 
     }
 
     public function _after(AcceptanceTester $I)
     {
-        // static::$fm->deleteSaved();
-        \League\FactoryMuffin\Faker\Facade::deleteSaved();
+        // commented out to check that we are correctly filling the DB
+        // static::$fm->deleteSaved(); 
     }
 
     // tests
-    public function tryToTest(AcceptanceTester $I)
+    public function tryToTest3(AcceptanceTester $I)
     {
         $I->wantTo('Use factory muffin and test that it worked');
         $I->amOnPage('nothing');
+        $I->see('Hey look at me!');
         $I->see('buttNothingSomething');
     }
 }
